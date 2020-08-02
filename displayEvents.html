@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <script type="text/javascript" src="displayEvents.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="container">
+    <h1>Display Evens</h1>
+    <form name="numbersToParse" onSubmit="return getEvens();" class="form-block">
+      <div class="form-group">
+        <label for="numStart">Starting Number: </label>
+        <input type="number" class="form-control" id="numStart">
+      </div>
+      <div class="form-group">
+        <label for="numEnd">Ending Number: </label>
+        <input type="number" class="form-control" id="numEnd">
+      </div>
+      <div class="form-group">
+        <label for="numStep">Step: </label>
+        <input type="number" class="form-control" id="numStep">
+      </div>
+      <button type="submit" id="displayEvens" class="btn btn-default">Display Evens</button>
+    </form>
+    <fieldset>
+      <span id="desc"></span>
+      <span id="results"></span>
+    </fieldset>
+  </div>
+</body>
+</html>
